@@ -1,0 +1,10 @@
+script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js')
+script(src="app.js")
+body(ng-app="myApp")
+  div(ng-controller="myCtrl")
+    h1
+      |{{greet}}
+    div(ng-repeat="g in greets")
+      h1 {{g}}
+    button(ng-click="say('arere')")
+      |SAY
